@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Logger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Expense Logger</h1>
+  <form id="expenseForm">
+    <input type="date" id="date" required />
+    <input type="text" id="description" placeholder="Description" required />
+    <input type="number" id="amount" placeholder="Amount" required />
+    <button type="submit">Add</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="expensesTableBody"></tbody>
+  </table>
+
+  <h3>Total: <span id="total">$0.00</span></h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
